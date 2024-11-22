@@ -199,8 +199,8 @@ public class DelegateAllJobs extends Element implements PluginWebSupport {
                     objEmployee.put("unit_code", employee.getUnitCode());
                     objEmployee.put("directorate_id", employee.getDirectorateId());
 
-                    String str_dob = employee.getDateOfBirth();
-                    LocalDate dob = LocalDate.parse(str_dob);
+                    String strdob = employee.getDateOfBirth();
+                    LocalDate dob = LocalDate.parse(strdob);
                     objEmployee.put("age", "" + LoadDataEmployee.calculateAge(dob));
 
                     mainObj.put("employee", objEmployee);
